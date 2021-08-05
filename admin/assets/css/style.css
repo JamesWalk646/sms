@@ -1,0 +1,121 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/* signup page css start */
+.signup-header{
+	width: 30%;
+    margin: 50px auto 0px;
+	color: #fff;
+	background: #2b345f;
+	text-align: center;
+	border: 1px solid #2b345f;
+	border-bottom: none;
+	border-radius: 10px 10px 0px 0px;
+	padding: 20px;	
+}
+.signup-form{
+width: 30%;
+margin: 0px auto;
+padding: 20px;
+border: 1px solid #2b345f;
+background: #fff;
+border-radius: 0px 0px 10px 10px;
+}
+.errors{
+width: 92%;
+margin: 0px auto;
+padding: 10px;
+border: 1px solid #a94442;
+color: #a94442;
+background: #f2dede;
+border-radius: 5px;
+text-align: left;
+}
+/* signup page css end */
+
+
+/* add_teacher css start */
+.heading-two{
+font-size: 23px;
+font-weight: bold;
+color: black;
+}
+.profile-image{
+	width: 150px;
+}
+.btn-submit{
+	background-color: #2b345f;
+	color: #fff;
+	padding: 10px 40px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;	
+	outline: none;
+	font-size: 17px;
+	font-weight: 500;
+}
+.btn-submit:hover{
+	background: transparent;
+	border: 2px solid #2b345f;
+	color: #2b345f;
+}
+/* add_teacher css end*/
+
+/* view_teachers css start */
+
+.btn-new{
+	background-color: #2b345f;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;	
+	outline: none;
+	font-size: 15px;
+	font-weight: 500;
+}
+.btn-new:hover{
+	background: transparent;
+	border: 2px solid #2b345f;
+	color: #2b345f;	
+}
+.select-box{
+	padding: 7px 8px;
+	border: 1px solid #2b345f;
+	outline: none;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #2b345f;
+}
+.btn-search{
+	background: transparent;
+	border: 1px solid #2b345f;
+	color: #2b345f;	
+	padding: 7px 18px;
+	border-radius: 5px;
+	outline: none;
+}
+.select-class{
+	color: #464855;
+	font-size: 17px;
+	font-weight: 600;
+}
+.fa, .fas{
+	color: #2b345f;
+	font-size: 17px;
+	
+}
+.teacher-data{
+	height: auto;
+}
+
+/* view_teachers css end */
