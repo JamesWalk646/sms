@@ -96,6 +96,9 @@ $con = mysqli_connect("localhost","root","","php_auth_api");
                     </div>
                 </div>
 
+                <div>
+                    
+                </div>
 
                 <div class="row mt-2">
 
