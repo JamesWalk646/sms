@@ -70,7 +70,7 @@ html body .content .content-wrapper .content-wrapper-before
     top: 0;
     left: 0;
 
-    width: 100%;
+    /* width: 100%; */
     height: 120px;
 
     -webkit-transition: 300ms ease all;
@@ -4694,3 +4694,95 @@ body:after
 
     width: 90%;
 }
+.bg-yellow{
+    border-top: 1px solid rgb(253, 198, 88);
+    border-bottom: 1px solid rgb(253, 198, 88);
+    background: #fedd9b;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* height: 100px; */
+    padding: 20px 22px;
+}
+.bg-icon-yellow{
+    background: rgb(253, 188, 57);
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa, .fas{
+    font-size: 25px;
+}
+.numbers-students h2{
+color: #000;
+font-size: 28px;
+}
+.numbers-students p{
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+.bg-sky{
+    border-top: 1px solid rgb(102, 202, 252);
+    border-bottom: 1px solid rgb(102, 202, 252);
+    background: rgb(209, 239, 254);
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* height: 120px; */
+    padding: 20px 22px;
+}
+.bg-icon-blue{
+    background: rgb(25, 175, 251);
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-light-red{
+    border-top: 1px solid rgb(248, 154, 129);
+    border-bottom: 1px solid rgb(248, 154, 129);
+    background: rgb(253, 225, 217);
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* height: 100px; */
+    padding: 20px 22px;
+}
+.bg-icon-red{
+   background:  rgb(244, 104, 65);
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-purple{
+    border-top: 1px solid rgb(159, 156, 251);
+    border-bottom: 1px solid rgb(159, 156, 251);
+    background: rgb(223, 222, 239) !important ;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* height: 100px; */
+    padding: 20px 22px;
+}
+.bg-icon-purple{
+    background:  rgb(110, 107, 250);
+     height: 50px;
+     border-radius: 8px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .dashboard-head{
+     color: #6c757d;
+     font-weight: bolder;
+ }
+ .welcome-head{
+     color: #000;
+     font-weight: bolder;
+ }
+ .charts-head{
+     color: #000;
+     font-weight: bolder;
+ }
