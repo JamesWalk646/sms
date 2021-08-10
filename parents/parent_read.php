@@ -10,20 +10,23 @@ $con = mysqli_connect("localhost","root","","php_auth_api");
 
 $response = array();
 if($con){
-    $sql = "SELECT * FROM  teachers";
+    $sql = "SELECT * FROM  students";
     $result = mysqli_query($con,$sql);
     if($result){
        
         $i=0;
         while($row=mysqli_fetch_assoc($result)){
             $response[$i]['id'] = $row['id'];
-            $response[$i]['class_name'] = $row['class_name'];
-            $response[$i]['class_number'] = $row['class_number'];
-            $response[$i]['num_of_students'] = $row['num_of_students'];
-            $response[$i]['Teacher_name'] = $row['fname'];
-            $response[$i]['class_start'] = $row['class_start'];
-            $response[$i]['class_end'] = $row['class_end'];
-            $response[$i]['class_location'] = $row['class_location'];
+            $response[$i]['parentfname'] = $row['paren_fname'];
+            $response[$i]['parentmname'] = $row['parent_mname'];
+            $response[$i]['parentlname'] = $row['parent_lname'];
+            $response[$i]['parentemail'] = $row['paren_email'];
+            $response[$i]['parentgender'] = $row['parent_gender'];
+            $response[$i]['parentnumber'] = $row['parent_number'];
+            $response[$i]['parentaddress'] = $row['parent_address'];
+            $response[$i]['parentcityname'] = $row['parent_cityname'];
+            $response[$i]['parentcountry'] = $row['parent_country'];
+            $response[$i]['parentprofileimgurl'] = "http://" . $_SERVER['SERVER_NAME'].'/php-login-registration-api/' .'upload/'.$row['parent_profile'];
             $i++;
         }
       echo json_encode($response,JSON_PRETTY_PRINT);

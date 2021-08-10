@@ -8,7 +8,7 @@ header('Content-Type: application/json');
 $data = json_decode(file_get_contents("php://input"),true);
    $id = $data['id'];
    
-   $sql = "DELETE FROM exam WHERE id = $id "; 
+   $sql = "DELETE FROM exams WHERE id = $id "; 
   $result =  mysqli_query($con,$sql);
   if($result){
       echo "Deleted Exam Details";

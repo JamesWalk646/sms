@@ -28,18 +28,7 @@ if($con){
             $response[$i]['address'] = $row['address'];
             $response[$i]['cityname'] = $row['cityname'];
             $response[$i]['country'] = $row['country'];
-            $response[$i]['joiningdate'] = $row['joiningdate'];
             $response[$i]['profileimgurl'] = "http://" . $_SERVER['SERVER_NAME'].'/php-login-registration-api/' .'upload/'.$row['profileimage'];
-            $response[$i]['parentfname'] = $row['parentfname'];
-            $response[$i]['parentmname'] = $row['parentmname'];
-            $response[$i]['parentfname'] = $row['parentfname'];
-            $response[$i]['parentlname'] = $row['parentlname'];
-            $response[$i]['parentemail'] = $row['parentemail'];
-            $response[$i]['parentgender'] = $row['parentgender'];
-            $response[$i]['parentaddress'] = $row['parentaddress'];
-            $response[$i]['parentcityname'] = $row['parentcityname'];
-            $response[$i]['parentcountry'] = $row['parentcountry'];
-            $response[$i]['parentprofileimgurl'] = "http://" . $_SERVER['SERVER_NAME'].'/php-login-registration-api/' .'upload/'.$row['parentprofileimage'];
             $i++;
         }
       echo json_encode($response,JSON_PRETTY_PRINT);

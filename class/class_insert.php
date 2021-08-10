@@ -13,20 +13,15 @@ $data = json_decode(file_get_contents("php://input"), true); // collect input pa
 
 $class_name = $_POST['class_name'];
 $class_number = $_POST['class_number'];
-$class_capacity= $_POST['class_capacity'];
-
-while($row = mysqli_fetch_array($result)){
-$select_classteacher =   $row[1].$_POST['select_classteacher'];
-}
+$num_of_students= $_POST['num_of_students'];
+$fname= $_POST['teacher_name'];
 $class_start= $_POST['class_start'];
 $class_end = $_POST['class_end'];
-$class_location = $_POST['class_location'];
-
-		
+$class_location = $_POST['class_location'];		
 // if no error caused, continue ....
 if(!isset($errorMSG))
 {
-	$sql = "INSERT INTO class(class_name,class_number,class_capacity,select_classteacher,class_start,class_end,class_location) VALUES('$class_name','$class_number','$class_capacity','$select_classteacher','$class_start', '$class_end','$class_location')";
+	$sql = "INSERT INTO teachers(class_name,class_number,num_of_students,fname,class_start,class_end,class_location)VALUES('$class_name','$class_number','$num_of_students','$fname','$class_start', '$class_end','$class_location')";
  
 	$result =  mysqli_query($con,$sql);
 			

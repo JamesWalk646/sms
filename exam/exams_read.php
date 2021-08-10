@@ -10,18 +10,18 @@ $con = mysqli_connect("localhost","root","","php_auth_api");
 
 $response = array();
 if($con){
-    $sql = "SELECT * FROM exam";
+    $sql = "SELECT * FROM exams";
     $result = mysqli_query($con,$sql);
     if($result){
        
         $i=0;
         while($row=mysqli_fetch_assoc($result)){
             $response[$i]['id'] = $row['id'];
-            $response[$i]['select_class'] = $row['select_class'];
+            $response[$i]['class_name'] = $row['class_name'];
             $response[$i]['exam_name'] = $row['exam_name'];
-            $response[$i]['exam_startdate'] = $row['exam_startdate'];
-            $response[$i]['exam_enddate'] = $row['exam_enddate'];
-            $response[$i]['select_subjects'] = $row['select_subjects'];
+            $response[$i]['exam_startdate'] = $row['exam_start_date'];
+            $response[$i]['exam_enddate'] = $row['exam_end_date'];
+            $response[$i]['subject_name'] = $row['subject_name'];
             $i++;
         }
       echo json_encode($response,JSON_PRETTY_PRINT);

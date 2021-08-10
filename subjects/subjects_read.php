@@ -10,17 +10,16 @@ $con = mysqli_connect("localhost","root","","php_auth_api");
 
 $response = array();
 if($con){
-    $sql = "SELECT * FROM subjects";
+    $sql = "SELECT * FROM teachers";
     $result = mysqli_query($con,$sql);
     if($result){
        
         $i=0;
         while($row=mysqli_fetch_assoc($result)){
             $response[$i]['id'] = $row['id'];
-            $response[$i]['select_class'] = $row['select_class'];
-            $response[$i]['subject_name1'] = $row['subject_name1'];
+            $response[$i]['subject_name'] = $row['subject_name'];
             $response[$i]['subject_code'] = $row['subject_code'];
-            $response[$i]['select_subjectteacher'] = $row['select_subjectteacher'];
+            $response[$i]['teacher_name'] = $row['fname'];
             $response[$i]['book_name'] = $row['book_name'];
             $i++;
         }
